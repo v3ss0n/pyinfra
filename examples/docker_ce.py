@@ -62,7 +62,7 @@ if host.get_fact(LinuxName) == "Ubuntu":
         name="Add the Docker CE apt repo",
         src=(
             "deb [arch=amd64] https://download.docker.com/linux/"
-            "{} {} stable".format(linux_id, code_name)
+            f"{linux_id} {code_name} stable"
         ),
         filename="docker-ce-stable",
     )
